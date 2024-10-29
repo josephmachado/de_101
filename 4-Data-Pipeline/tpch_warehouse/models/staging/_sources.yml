@@ -1,0 +1,24 @@
+version: 2
+
+sources:
+  - name: tpch
+    description: TPCH benchmark data for analysis and testing
+    tables:
+      - name: customer
+        description: One record per customer in the database
+      - name: orders
+        description: One record per order placed by customers
+        loaded_at_field: orderdate
+      - name: lineitem
+        description: One record per item within an order
+        loaded_at_field: shipdate
+      - name: partsupp
+        description: Information about supplier-part relationships
+      - name: part
+        description: Catalog of items or parts available for sale
+      - name: supplier
+        description: Information about suppliers providing parts
+      - name: nation
+        description: Geographic nation identifiers for regions and suppliers
+      - name: region
+        description: Geographical grouping of nations
