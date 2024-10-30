@@ -1,0 +1,16 @@
+models:
+  - name: customer_outreach_metrics
+    description: Customer outreach metrics, including order value and average items per order.
+    columns:
+      - name: customer_key
+        description: Unique identifier for each customer.
+      - name: customer_name
+        description: Name of the customer.
+      - name: min_order_value
+        description: Minimum value of an order placed by the customer.
+      - name: max_order_value
+        description: Maximum value of an order placed by the customer.
+      - name: avg_order_value
+        description: Average order value for the customer.
+      - name: avg_num_items_per_order
+        description: Average number of items per order placed by the customer.

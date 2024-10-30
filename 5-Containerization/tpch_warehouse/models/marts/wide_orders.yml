@@ -1,0 +1,29 @@
+models:
+  - name: wide_orders
+    description: Wide table combining customer and order information.
+    columns:
+      - name: orderkey
+        description: The unique identifier for each order.
+        data_tests:
+          - not_null
+          - unique
+      - name: custkey
+        description: Foreign key reference to the customer table.
+      - name: totalprice
+        description: Total price of the order.
+      - name: orderstatus
+        description: Status of the order.
+      - name: orderdate
+        description: Date when the order was placed.
+      - name: customer_key
+        description: Unique identifier for the customer in the order.
+      - name: customer_name
+        description: The name of the customer.
+      - name: address
+        description: The address of the customer.
+      - name: phone
+        description: Contact phone number of the customer.
+      - name: mktsegment
+        description: The market segment associated with the customer.
+      - name: region_name
+        description: Region associated with the customer’s nation.

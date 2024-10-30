@@ -2,7 +2,7 @@ with
 
 source as (
 
-    select * from {{ source('tpch', 'lineitem') }}
+    select * from {{ source('raw_layer', 'lineitem') }}
 
 ),
 

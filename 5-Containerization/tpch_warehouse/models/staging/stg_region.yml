@@ -1,0 +1,13 @@
+models:
+  - name: stg_region
+    description: Region data from TPCH with standardized column names.
+    columns:
+      - name: regionkey
+        description: The unique key for each region.
+        data_tests:
+          - not_null
+          - unique
+      - name: name
+        description: The name of the region.
+      - name: comment
+        description: Comments or notes regarding the region.

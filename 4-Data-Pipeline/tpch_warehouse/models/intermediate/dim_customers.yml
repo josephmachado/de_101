@@ -1,0 +1,27 @@
+models:
+  - name: dim_customer
+    description: Dimension table for customer data with enriched information from nation and region.
+    columns:
+      - name: customer_key
+        description: Unique identifier for each customer.
+        data_tests:
+          - not_null
+          - unique
+      - name: customer_name
+        description: The name of the customer.
+      - name: address
+        description: The address of the customer.
+      - name: phone
+        description: Contact phone number of the customer.
+      - name: acctbal
+        description: Account balance of the customer.
+      - name: mktsegment
+        description: The market segment associated with the customer.
+      - name: nation_name
+        description: The name of the nation associated with the customer.
+      - name: nation_comment
+        description: Comments or notes related to the nation.
+      - name: region_name
+        description: The name of the region associated with the nation.
+      - name: region_comment
+        description: Comments or notes related to the region.

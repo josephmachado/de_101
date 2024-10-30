@@ -1,0 +1,8 @@
+models:
+  - name: order_lineitem_metrics
+    description: Aggregated metrics on line items for each order.
+    columns:
+      - name: order_key
+        description: Unique identifier for each order.
+      - name: num_lineitems
+        description: Count of line items associated with each order.

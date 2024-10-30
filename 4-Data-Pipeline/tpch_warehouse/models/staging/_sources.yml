@@ -1,7 +1,9 @@
 version: 2
 
 sources:
-  - name: tpch
+  - name: raw_layer
+    meta:
+        external_location: ./raw_data/{name}.csv
     description: TPCH benchmark data for analysis and testing
     tables:
       - name: customer
