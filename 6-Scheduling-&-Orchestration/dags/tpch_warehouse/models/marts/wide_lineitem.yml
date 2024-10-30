@@ -1,0 +1,18 @@
+models:
+  - name: wide_lineitem
+    description: Wide table containing detailed line item information from orders.
+    columns:
+      - name: orderkey
+        description: The unique key for each order associated with the line item.
+      - name: partkey
+        description: Unique key for each part in the line item.
+      - name: suppkey
+        description: Supplier key associated with the line item.
+      - name: quantity
+        description: Quantity of the line item.
+      - name: discount
+        description: Discount applied to the line item.
+      - name: tax
+        description: Tax applied to the line item.
+      - name: shipdate
+        description: Date the line item was shipped.

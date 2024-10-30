@@ -1,0 +1,25 @@
+models:
+  - name: fct_orders
+    description: Fact table for orders, with details on customer orders.
+    columns:
+      - name: orderkey
+        description: Unique identifier for each order.
+        data_tests:
+          - not_null
+          - unique
+      - name: custkey
+        description: Foreign key reference to the customer table.
+      - name: orderstatus
+        description: Status of the order.
+      - name: totalprice
+        description: Total price of the order.
+      - name: orderdate
+        description: Date when the order was placed.
+      - name: orderpriority
+        description: Priority level of the order.
+      - name: clerk
+        description: Clerk who handled the order.
+      - name: shippriority
+        description: Shipping priority level of the order.
+      - name: comment
+        description: Additional comments or notes regarding the order.

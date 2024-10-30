@@ -1,0 +1,4 @@
+apache-airflow-client==2.9.0
+duckdb==1.0.0
+dbt-core==1.8.0
+dbt-duckdb==1.8.0
