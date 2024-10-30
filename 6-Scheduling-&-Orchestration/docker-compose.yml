@@ -88,3 +88,10 @@ services:
       _AIRFLOW_WWW_USER_USERNAME: ${_AIRFLOW_WWW_USER_USERNAME:-airflow}
       _AIRFLOW_WWW_USER_PASSWORD: ${_AIRFLOW_WWW_USER_PASSWORD:-airflow}
 
+  dashboard:
+    image: metabase/metabase
+    container_name: dashboard
+    volumes:
+        - ./data:/opt/airflow/data:rw
+    ports:
+      - "3000:3000"
