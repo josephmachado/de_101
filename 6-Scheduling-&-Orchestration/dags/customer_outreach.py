@@ -33,7 +33,8 @@ with DAG(
 
         conn = duckdb.connect(duckdb_file)
         cursor = conn.cursor()
-        
+
+        # This code gets data from our preagg tables and writes it into a sqlite3 format for visualization with Metabase
         cursor.execute(f"ATTACH '{sqlite3_db}' AS sqlite_db (TYPE SQLITE)")
         cursor.execute(f"CREATE TABLE sqlite_db.customer_outreach_metrics AS SELECT * FROM customer_outreach_metrics")
         cursor.execute(f"CREATE TABLE sqlite_db.order_lineitem_metrics AS SELECT * FROM order_lineitem_metrics")
