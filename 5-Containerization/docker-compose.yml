@@ -5,6 +5,7 @@ services:
     build:
       context: .  # The Dockerfile is in the current directory
       dockerfile: Dockerfile
+    container_name: dbt-container
     volumes:
       - ./tpch_warehouse:/dbt  # Mount the tpch_warehouse folder to /dbt to container
     ports:
